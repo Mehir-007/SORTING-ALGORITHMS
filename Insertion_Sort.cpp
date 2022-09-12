@@ -1,8 +1,13 @@
 /*
-Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are in the intended order.
-Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. 
-Therefore, it is called a bubble sort.
+Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each iteration.
+Insertion sort works similarly as we sort cards in our hand in a card game.
 
+We assume that the first card is already sorted then, we select an unsorted card. 
+If the unsorted card is greater than the card in hand, it is placed on the right otherwise, to the left. In the same way, 
+other unsorted cards are taken and put in their right place.
+A similar approach is used by insertion sort.
+
+Insertion Sort Complexity
 Time Complexity	 
 Best	O(n)
 Worst	O(n2)
@@ -14,7 +19,16 @@ Stability	Yes
 using namespace std;
 void Incertion_Sort(vector<int>&arr)
 {
-  
+  for(int i=1;i<10;i++)
+  {
+    int key=arr[i];int j=i-1;
+    while(j>=0 && key<arr[j])
+    {
+        arr[j+1]=arr[j];
+        j--;
+    }
+    arr[j+1]=key;
+  }
 }
 
 int main()
