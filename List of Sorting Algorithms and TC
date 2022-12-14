@@ -1,0 +1,28 @@
+---Different Sorting Algorithms---
+1-Bubble Sort
+2-Selection Sort
+3-Insertion Sort
+4-Merge Sort
+5-Quicksort
+6-Counting Sort
+7-Radix Sort
+8-Bucket Sort
+9-Heap Sort
+10-Shell Sort
+----------------------------------
+
+-----Time Complexity-----
+
+Sorting Algorithm	Time Complexity - Best	Time Complexity - Worst	Time Complexity -  Average	   Space Complexity
+
+1-Bubble Sort	                                 n	                    n2	             n2	            1
+2-Selection Sort	                             n2	                    n2	             n2	            1
+3-Insertion Sort	                             n	                    n2	             n2	            1
+4-Merge Sort	                                 nlog n	                nlog n           nlog n	        n
+5-Quicksort	                                   nlog n	                n2	             nlog n	        log n
+6-Counting Sort	                               n+k	                  n+k	             n+k	          max
+7-Radix Sort	                                 n+k	                  n+k	             n+k	          max
+8-Bucket Sort	                                 n+k	                  n2	             n	            n+k
+9-Heap Sort	                                   nlog n	                nlog n           nlog n	        1
+10-Shell Sort	                                 nlog n	                n2	             nlog n	        1
+
